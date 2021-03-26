@@ -2,6 +2,8 @@
 ## NOTICE
 # Dirty quick script to track "stuff". Buy me a beer :))
 
+# Just quickly print out the current datetime
+echo $(date)
 
 ## CONSTANTS
 SCRIPT_PATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
