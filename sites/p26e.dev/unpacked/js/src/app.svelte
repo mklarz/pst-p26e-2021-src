@@ -156,4 +156,13 @@
 		display: block;
 		text-align: center;
 	}
+
+	:global(code) {
+		background-color: rgba(0, 0, 0, 0.3);
+		padding: 0.1em;
+	}
+
+	:global(a) {
+		color: inherit;
+	}
 </style>
