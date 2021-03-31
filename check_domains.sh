@@ -13,7 +13,7 @@ SITE_DIR="$SCRIPT_PATH/sites"
 FILES=(robots.txt humans.txt index.html egg.jpg site.webmanifest global.css build/bundle.css build/bundle.css.map build/bundle.js build/bundle.js.map)
 
 # The domains to monitor
-DOMAINS=(p26e.dev)
+DOMAINS=(p26e.dev beta.p26e.dev)
 
 ## FUNCTIONS
 download_files() {
