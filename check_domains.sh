@@ -76,6 +76,11 @@ unpack_sourcemaps() {
   done
 }
 
+fetch_challenges() {
+  echo "Looking for new challenges in the API"
+  curl -s https://p26e.dev/api/challenges | jq > "$SCRIPT_PATH/challenges.json"
+}
+
 commit_diff() {
   # Commit the changes
   COMMIT_MESSAGE="$1"
@@ -130,6 +135,9 @@ cd $SCRIPT_PATH # dirty
 for DOMAIN in "${DOMAINS[@]}"; do
   check_domain "$DOMAIN"
 done
+
+# Check if there are new challenges from the API
+fetch_challenges
 
 # Push changes (if any)
 git push origin main
