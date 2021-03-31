@@ -4,12 +4,11 @@
 		A11y,
 		Pagination,
 		Keyboard,
-		Zoom,
 	} from "swiper";
 	import { Swiper, SwiperSlide } from "swiper/svelte";
 	import "swiper/swiper-bundle.css";
 
-	SwiperCore.use([HashNavigation, A11y, Pagination, Keyboard, Zoom]);
+	SwiperCore.use([HashNavigation, A11y, Pagination, Keyboard]);
 
 	export let challenges = [];
 	export let selectedChallenge = undefined;
@@ -18,7 +17,6 @@
 <div class="wrapper">
 	<Swiper
 		centeredSlides={true}
-		zoom={true}
 		slidesPerView={1.3}
 		pagination={{ clickable: true }}
 		keyboard={true}
@@ -58,9 +56,7 @@
 		{#each challenges as challenge}
 			<SwiperSlide data-hash={challenge.slug.current}>
 				<div class="slide-element">
-					<div class="swiper-zoom-container">
-						<img src={challenge.image.url} alt={challenge.image.alt} />
-					</div>
+					<img src={challenge.image.url} alt={challenge.image.alt} />
 				</div>
 			</SwiperSlide>
 		{/each}
@@ -80,10 +76,6 @@
 
 	.wrapper :global(.swiper-pagination-bullet-active) {
 		opacity: 1;
-	}
-
-	.wrapper :global(.swiper-slide-zoomed) {
-		z-index: 1;
 	}
 
 	.slide-element {
