@@ -138,7 +138,7 @@ for DOMAIN in "${DOMAINS[@]}"; do
 done
 
 # Check if there are new challenges from the API
-fetch_challenges
+#fetch_challenges
 
 # Push changes (if any)
 git push origin main
