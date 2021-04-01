@@ -3,7 +3,7 @@ import { Magic } from "magic-sdk";
 import { OAuthExtension } from "@magic-ext/oauth";
 
 function createMagicStore() {
-	const magic = new Magic("pk_live_6D109FD8E8026A65g", {
+	const magic = new Magic("pk_live_6D109FD8E8026A65", {
 		locale: "no",
 		extensions: [new OAuthExtension()],
 	});
