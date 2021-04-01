@@ -10,13 +10,6 @@
 
 	let [challengesPromise, revalidate] = fetcher("/api/challenges");
 	let selectedChallenge = undefined;
-
-	function onSubmitSuccess() {
-		if (selectedChallenge && selectedChallenge.slug?.current) {
-			plausible(selectedChallenge.slug.current);
-		}
-		return revalidate();
-	}
 </script>
 
 <SvelteToast />
@@ -48,7 +41,7 @@
 					{/each}
 				</ul>
 				{#if !selectedChallenge.informationOnly}
-					<Form {onSubmitSuccess} {selectedChallenge} />
+					<Form onSubmitSuccess={revalidate} {selectedChallenge} />
 				{/if}
 			</Blob>
 			{#if !selectedChallenge.informationOnly}

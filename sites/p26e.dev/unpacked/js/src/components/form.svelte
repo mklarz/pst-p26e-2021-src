@@ -38,6 +38,9 @@
 		}
 
 		isSubmitting = false;
+		window.plausible(selectedChallenge.slug.current, {
+			props: { status: res.status },
+		});
 	}
 </script>
 
