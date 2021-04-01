@@ -1,0 +1,403 @@
+[
+  {
+    "_id": "04b7a54a-edb1-4b8c-b5e0-790c8403081e",
+    "description": [
+      {
+        "_key": "7a030809c618",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "98ec6ae7b980",
+            "_type": "span",
+            "marks": [],
+            "text": "Hei, og velkommen til PSTs påskenøtter. Hver dag klokken 10:00 kommer det en ny oppgave her på "
+          },
+          {
+            "_key": "b20dbb9d6321",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "`p${\"olitiets sikkerhetstjenest\".length}e.dev`"
+          },
+          {
+            "_key": "62bd354018b4",
+            "_type": "span",
+            "marks": [],
+            "text": ". Siste oppgave slippes søndag 1. påskedag 10:00. Les informasjonen under før du setter i gang."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "406753d8cdaf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "82425e316695",
+            "_type": "span",
+            "marks": [
+              "underline"
+            ],
+            "text": "FORMAT"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "24e9ac2d15da",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "b82aa2356236",
+            "_type": "span",
+            "marks": [],
+            "text": "Alle oppgaver har et tilhørende løsningsord, ofte referert til som \"flagg\". Løsningsordene skal alltid leveres omkranset av "
+          },
+          {
+            "_key": "904d0b1f2a8d",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "PST{"
+          },
+          {
+            "_key": "33e86bc8a024",
+            "_type": "span",
+            "marks": [],
+            "text": " og "
+          },
+          {
+            "_key": "89d0247dc96a",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "}"
+          },
+          {
+            "_key": "dc66d65e320f",
+            "_type": "span",
+            "marks": [],
+            "text": ". Eksempelvis, dersom du finner løsningsordet "
+          },
+          {
+            "_key": "7a97fa463c6c",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "hunter2"
+          },
+          {
+            "_key": "bc3c092ddfca",
+            "_type": "span",
+            "marks": [],
+            "text": " er svaret på oppgaven "
+          },
+          {
+            "_key": "245e46317702",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "PST{hunter2}"
+          },
+          {
+            "_key": "594f1019304b",
+            "_type": "span",
+            "marks": [],
+            "text": ". Ofte (men ikke alltid) vil du finne løsningsordene allerede omkranset med "
+          },
+          {
+            "_key": "2d0dcacf1ad4",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "PST{"
+          },
+          {
+            "_key": "ff59ddc2a681",
+            "_type": "span",
+            "marks": [],
+            "text": " og "
+          },
+          {
+            "_key": "a1dfc58f771e",
+            "_type": "span",
+            "marks": [
+              "code"
+            ],
+            "text": "}"
+          },
+          {
+            "_key": "e181d0908272",
+            "_type": "span",
+            "marks": [],
+            "text": ". Der vil alltid være klart ut i fra kontekst at det er løsningsordet (flagget) du har funnet. Noen oppgaver vil være akkompagnert av tekst og/eller vedlegg. Dette vil du i så fall finne rett over svarskjema for oppgaven. Det kan være lurt å sjekke dette før du graver deg for lang ned i et hull 🕳"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3c504c6d943a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3bfa0499a771",
+            "_type": "span",
+            "marks": [
+              "underline"
+            ],
+            "text": "REGLER (ROI)"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "edac1c9fe161",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "0f553ecc770a",
+            "_type": "span",
+            "marks": [],
+            "text": "Det er aldri meningen at du skal \"brute force\" eksterne APIer eller tjeneste. Det heller ikke meningen at du skal komme deg in på brukerkontoer som er benyttet i forbindelse med påskenøttene. For de fleste oppgaver vil det lønne seg å være kreativ, og følge ledetråder du finner. Det kan også være lurt å skrive ned ting du finner, da det kan vise seg å være relevant i en senere oppgave. Vi anbefaler å google (eventuelt duckduckgo'e) ofte, og å spørre på den uoffisiell Discord-serveren (se lenger nede) dersom du står helt fast og trenger hint."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "432682400084",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "c107d26b96b7",
+            "_type": "span",
+            "marks": [
+              "underline"
+            ],
+            "text": "DELTAGELSE"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3bfcbfb81072",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "830d0b9a4a36",
+            "_type": "span",
+            "marks": [],
+            "text": "For å delta må du logge inn. Det er mulig å enten logge inn med epost, eller benytte GitHub som innloggingtilbyder. Vi vil aldri dele eposten din med noen. Grunnen til at vi trenger eposten din er for å kunne kontakte deg dersom du blir trukket ut som vinner. Vi vil slette all data etter konkurransen er over."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "9970eeb29704",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d16217ace424",
+            "_type": "span",
+            "marks": [
+              "underline"
+            ],
+            "text": "VINNER"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "8d103217e6ac",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "8c9a6a3a1159",
+            "_type": "span",
+            "marks": [],
+            "text": "Hver dag vil de 25 som løser oppgaven raskest havne i "
+          },
+          {
+            "_key": "accdb357d656",
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "berømmelsesskyen"
+          },
+          {
+            "_key": "aa2b155a4b7e",
+            "_type": "span",
+            "marks": [],
+            "text": ". Det er en ny berømmelsessky hver dag, og du finner den under oppgavetittelen og svarskjema. I løpet av uken etter påske vil vi trekke en vinner. Vi kommer til å trekke tilfeldig blant alle som har vært i berømmelsesskyen. Dersom du har vært så rask at du har havnet i berømmelsesskyen to dager vil du ha dobbelt så stor sjanse for å vinne som en som kun har vært der én gang."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c32027798cc2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "dbcf2750332c",
+            "_type": "span",
+            "marks": [
+              "underline"
+            ],
+            "text": "COMMUNITY"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6e4e56ccbc75",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "d44a0c1ad27a",
+            "_type": "span",
+            "marks": [],
+            "text": "Dersom du trenger hjelp eller lurer på noe finnes det en uoffisiell Discord-server, drevet på frivillig basis av tidligere deltagere av PST sine påskenøtter og julekalendere: "
+          },
+          {
+            "_key": "f8a4fa569597",
+            "_type": "span",
+            "marks": [
+              "97c4f6b91cca"
+            ],
+            "text": "https://discord.gg/7VuurW4"
+          },
+          {
+            "_key": "e24fcd40d2e6",
+            "_type": "span",
+            "marks": [],
+            "text": ". PST har ingenting med serveren å gjøre, men vi har en bruker der ved navn \"Tastefinger\". Årsaken til det er for å lettere kunne snappe opp feil som blir oppdaget. Vi kommer ikke til å være tilgjengelige der gjennom påsken."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "97c4f6b91cca",
+            "_type": "link",
+            "href": "https://discord.gg/7VuurW4"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "07587480d79b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "bfd9a9de2f10",
+            "_type": "span",
+            "marks": [],
+            "text": "Lykke til!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "image": {
+      "alt": "Tradisjonene tro inviterer Påske Haren et knippe fasjonable gjester til å tilbringe påsken på Harefjell vinterresort. Lite visste han at i år kom ikke festlighetene til å like knirkefritt som vanlig... (På bildet ser vi en rev stå på ski foran majestetiske Harefjell vinterresort)",
+      "url": "https://cdn.sanity.io/images/ttmdhnq3/production/722a7f5ae76d92eed0c2229dbfe4765d00ff6dd0-1280x800.png"
+    },
+    "informationOnly": true,
+    "slug": {
+      "_type": "slug",
+      "current": "introduksjon"
+    },
+    "title": "Velkommen til Harefjell"
+  },
+  {
+    "_id": "0de9e913-ef14-44c5-ae5a-51b89c12e7df",
+    "description": [
+      {
+        "_key": "da4d6840d425",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "402f8406ad4a",
+            "_type": "span",
+            "marks": [],
+            "text": "Vi har opplevd litt trøbbel med innlogging. Det skal være fikset nå. Beklager problemene."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "image": {
+      "alt": "I første rute er Påske Haren forskrekket over at EggsChange-serveren har krasjet. Neste rute er 30 timer tidligere, da gjestene ankom Harefjell. Påske Haren ønsker å vise alle de nye sikkerhetstiltakene han har satt i stand. I rute 3 blir vi presentert for gjestene: musen Mette Traakpad, pingvinen Ben Guvin (det er noe kjent med den fyren...), vaskebjørnen Anetti Bac, reven Mikael Foks og ulven Ulrik Lupetuss. I siste bildet forteller Påske Haren ivrig om de nye sikkerhetstiltakene, deriblant volgrav, kameraer med med. Samtidig tar Anetti og Mikael en selfie som Anetti legger ut på Instagram. Mikael ber Anetti tagge ham på @mikaelfoks1337.",
+      "url": "https://cdn.sanity.io/images/ttmdhnq3/production/11bfcee186bdfe47d49b2a18ef0ac9794b58b648-1280x800.png"
+    },
+    "informationOnly": false,
+    "slug": {
+      "_type": "slug",
+      "current": "skjaertorsdag"
+    },
+    "solutions": [
+      {
+        "id": "0xbDd28E7BFfA2D707057cDFE8605E877FE7d59CA5",
+        "nickname": "Scalpel",
+        "timestamp": "2021-04-01T08:08:47.204Z"
+      },
+      {
+        "id": "0x0da22216cd5470cD4bDA930884d3F97872FB65cC",
+        "nickname": "halvis",
+        "timestamp": "2021-04-01T08:14:38.937Z"
+      },
+      {
+        "id": "0x1e5e0df0d7C19d001126f655E0a2fae3e655Ac6a",
+        "nickname": "unblvr",
+        "timestamp": "2021-04-01T08:15:31.971Z"
+      },
+      {
+        "id": "0xE78dA1146e8d7ad70bbeaF9fca7e74Df183E9C92",
+        "nickname": "Sithis",
+        "timestamp": "2021-04-01T08:18:29.109Z"
+      },
+      {
+        "id": "0x9Ae25a54512A6D7cDeAD70a4D9216e27bc0A5BDe",
+        "nickname": "klarz",
+        "timestamp": "2021-04-01T08:29:53.852Z"
+      },
+      {
+        "id": "0x3fEf27f9b16Ad7D752130f23a7e74FB80428673c",
+        "nickname": "kev90",
+        "timestamp": "2021-04-01T08:36:00.553Z"
+      },
+      {
+        "id": "0xE63B1a06ab69dc893d2B40344Bf293Fc2445E33F",
+        "nickname": "webhak",
+        "timestamp": "2021-04-01T08:38:40.978Z"
+      },
+      {
+        "id": "0x1d8e44D8c41536019A352C3120f04C12968C8488",
+        "nickname": "bitBug",
+        "timestamp": "2021-04-01T08:40:33.406Z"
+      },
+      {
+        "id": "0x2E3EF9b4F2900F753b0dE9488c55b528843e6A1e",
+        "nickname": "trylan",
+        "timestamp": "2021-04-01T08:43:10.144Z"
+      }
+    ],
+    "title": "Skjærtorsdag"
+  }
+]

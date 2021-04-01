@@ -78,7 +78,7 @@ unpack_sourcemaps() {
 
 fetch_challenges() {
   echo "Looking for new challenges in the API"
-  curl -s https://p26e.dev/api/challenges | jq > "$SCRIPT_PATH/challenges.json"
+  curl -s https://p26e.dev/api/challenges | jq . > "$SCRIPT_PATH/challenges.json"
 }
 
 commit_diff() {
