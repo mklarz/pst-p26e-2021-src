@@ -53,7 +53,7 @@
 			</Blob>
 			{#if !selectedChallenge.informationOnly}
 				<section>
-					<h2>Berømmeøsesskyen</h2>
+					<h2>Berømmelsesskyen</h2>
 					<p>
 						De 25 raskeste hver dag havner i <i>berømmelsesskyen</i>
 					</p>
