@@ -8,6 +8,9 @@ echo $(date)
 ## CONSTANTS
 SCRIPT_PATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 SITE_DIR="$SCRIPT_PATH/sites"
+CHALLENGES_FILE="$SCRIPT_PATH/challenges.json"
+SOLUTIONS_FILE="$SCRIPT_PATH/solutions.json"
+CHALLENGE_FILES_DIR="$SCRIPT_PATH/challenge_files"
 
 # Files we want to track, files ending with ".map" will considered as sourcemaps and unpacked.
 FILES=(robots.txt humans.txt index.html egg.jpg site.webmanifest global.css build/bundle.css build/bundle.css.map build/bundle.js build/bundle.js.map)
@@ -31,17 +34,10 @@ download_files() {
     FILE_SIZE=$(stat -c%s "$TMP_FILE")
 
     if [ $FILE_SIZE -ne 0 ]; then
-      if [[ $URL == "https://p26e.dev"* ]] && [[ $FILE == *"bundle.js" ]]; then
-        # TODO: not %100 certain this will be relevant
-        # Only p26e.dev includes the release version of the platform
-        RELEASE=$(cat "$TMP_FILE" | grep -Po 'release:"(\K.*?)"' | tr -d '"')
-        if [[ ! -z "$RELEASE" ]]; then
-          echo "$RELEASE" > "$SCRIPT_PATH/release_version.txt"
-          COMMIT_MESSAGE="[$DOMAIN] Release version update"
-        fi
-      fi
+      echo "Successfully downloaded file"
       mv "$TMP_FILE" "$OUTPUT_PATH"
     else
+      echo "Downloaded file is 0 bytes, ignoring"
       rm "$TMP_FILE"
     fi
 	done
@@ -78,12 +74,90 @@ unpack_sourcemaps() {
 
 fetch_challenges() {
   echo "Looking for new challenges in the API"
-  curl -s https://p26e.dev/api/challenges | jq . > "$SCRIPT_PATH/challenges.json"
+  CHALLENGES_TMP_FILE=$(mktemp /tmp/p26e.XXXXXX)
+  curl -s https://p26e.dev/api/challenges > "$CHALLENGES_TMP_FILE"
+  CURRENT_CHALLENGES_HASH=$(cat $CHALLENGES_FILE | jq . | md5sum | cut -d ' ' -f 1)
+  NEW_CHALLENGES_HASH=$(cat $CHALLENGES_TMP_FILE | jq 'map(del(.solutions))' | md5sum | cut -d ' ' -f 1)
+  echo "Current challenges hash: $CURRENT_CHALLENGES_HASH, new challenges hash: $NEW_CHALLENGES_HASH"
+
+  if [[ "$CURRENT_CHALLENGES_HASH" != "$NEW_CHALLENGES_HASH" ]]; then
+    # We have a diff! Let's handle it
+
+    # Download the image
+    IMAGES=$(cat $CHALLENGES_TMP_FILE | jq -r '.[] | select(.image != null) as $p | "\($p._id),\(.image.url)"')
+    while IFS= read -r line; do
+      # _id, image_url
+      IFS=',' read -r -a SPLIT <<< "$line"
+      CHALLENGE_ID="${SPLIT[0]}"
+      CHALLENGE_DIR="$CHALLENGE_FILES_DIR/$CHALLENGE_ID"
+      OUTPUT_PATH="$CHALLENGE_DIR/image.png"
+      IMAGE_URL="${SPLIT[1]}"
+      mkdir -p "$CHALLENGE_DIR"
+
+      echo "Downloading image for challenge ID $CHALLENGE_ID: $IMAGE_URL"
+
+      # Temporary store the file
+      TMP_FILE=$(mktemp /tmp/p26e.XXXXXX)
+      wget -q "$IMAGE_URL" -O "$TMP_FILE"
+      FILE_SIZE=$(stat -c%s "$TMP_FILE")
+
+      if [ $FILE_SIZE -ne 0 ]; then
+	echo "Successfully downloaded file"
+        mv "$TMP_FILE" "$OUTPUT_PATH"
+      else
+	echo "Downloaded file is 0 bytes, ignoring"
+        rm "$TMP_FILE"
+      fi
+    done <<< "$IMAGES"
+
+    # Let's download all the attachments that are specified in the challenges
+    ATTACHMENTS=$(cat $CHALLENGES_TMP_FILE | jq -r '.[] | select(.attachments != null) as $p | .attachments[] | "\($p._id),\(.filename),\(.url)"')
+    while IFS= read -r line; do
+      echo "$line"
+      # _id, attachment_filename, attachment_url
+      IFS=',' read -r -a SPLIT <<< "$line"
+      CHALLENGE_ID="${SPLIT[0]}"
+      CHALLENGE_DIR="$CHALLENGE_FILES_DIR/$CHALLENGE_ID"
+      ATTACHMENT_FILENAME="${SPLIT[1]}"
+      ATTACHMENT_URL="${SPLIT[2]}"
+      OUTPUT_PATH="$CHALLENGE_DIR/$ATTACHMENT_FILENAME"
+      mkdir -p "$CHALLENGE_DIR"
+
+
+      echo "Downloading attachment ($ATTACHMENT_FILENAME) for challenge ID $CHALLENGE_ID: $ATTACHMENT_URL"
+
+      # Temporary store the file
+      TMP_FILE=$(mktemp /tmp/p26e.XXXXXX)
+      wget -q "$ATTACHMENT_URL" -O "$TMP_FILE"
+      FILE_SIZE=$(stat -c%s "$TMP_FILE")
+
+      if [ $FILE_SIZE -ne 0 ]; then
+	echo "Successfully downloaded file"
+        mv "$TMP_FILE" "$OUTPUT_PATH"
+      else
+	echo "Downloaded file is 0 bytes, ignoring"
+        rm "$TMP_FILE"
+      fi
+    done <<< "$ATTACHMENTS"
+
+    # Seperate the challenges and solutions, easier for viewing diffs
+    cat $CHALLENGES_TMP_FILE | jq 'map(del(.solutions))' > $CHALLENGES_FILE
+    cat $CHALLENGES_TMP_FILE | jq 'map({_id, title, solutions})' > $SOLUTIONS_FILE
+
+    rm "$CHALLENGES_TMP_FILE"
+
+    echo "There are challenge differences, comitting!"
+    commit_diff "New changes to challenges"
+  else
+    echo "No challenge differences"
+  fi
+
 }
 
 commit_diff() {
   # Commit the changes
   COMMIT_MESSAGE="$1"
+  echo "Committing with message: $COMMIT_MESSAGE"
   git add -A
   git commit -m "$COMMIT_MESSAGE"
 }
@@ -94,10 +168,10 @@ handle_diff() {
   DOMAIN_DIR="$SITE_DIR/$DOMAIN"
 
   # Check sourcemaps
-  unpack_sourcemaps $DOMAIN
+  unpack_sourcemaps "$DOMAIN"
 
   # Commit the differences
-  commit_diff $COMMIT_MESSAGE
+  commit_diff "$COMMIT_MESSAGE"
 }
 
 check_domain() {
@@ -110,7 +184,7 @@ check_domain() {
   mkdir -p "$DOMAIN_DIR/unpacked/css"
   mkdir -p "$DOMAIN_DIR/files/build"
 
-  COMMIT_MESSAGE="[$DOMAIN] UPDATE"
+  COMMIT_MESSAGE="[$DOMAIN] Files were updated"
   # Let's download all the files we track
   download_files "$DOMAIN" "$URL" "$DOMAIN_DIR/files"
 
@@ -118,7 +192,7 @@ check_domain() {
   if [[ `git status --porcelain` ]]; then
     # We have a diff! Let's handle it
     echo "There are differences, checking..."
-    handle_diff $DOMAIN $COMMIT_MESSAGE
+    handle_diff "$DOMAIN" "$COMMIT_MESSAGE"
   else
     echo "No differences"
   fi
@@ -138,7 +212,7 @@ for DOMAIN in "${DOMAINS[@]}"; do
 done
 
 # Check if there are new challenges from the API
-#fetch_challenges
+fetch_challenges
 
 # Push changes (if any)
 git push origin main

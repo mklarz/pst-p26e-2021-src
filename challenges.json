@@ -138,7 +138,7 @@
             "_key": "e181d0908272",
             "_type": "span",
             "marks": [],
-            "text": ". Der vil alltid være klart ut i fra kontekst at det er løsningsordet (flagget) du har funnet. Noen oppgaver vil være akkompagnert av tekst og/eller vedlegg. Dette vil du i så fall finne rett over svarskjema for oppgaven. Det kan være lurt å sjekke dette før du graver deg for lang ned i et hull 🕳"
+            "text": ". Det vil alltid være klart ut i fra kontekst at det er løsningsordet (flagget) du har funnet. Noen oppgaver vil være akkompagnert av tekst og/eller vedlegg. Dette vil du i så fall finne rett over svarskjema for oppgaven. Det kan være lurt å sjekke dette før du graver deg for lang ned i et hull 🕳"
           }
         ],
         "markDefs": [],
@@ -154,7 +154,7 @@
             "marks": [
               "underline"
             ],
-            "text": "REGLER (ROI)"
+            "text": "REGLER"
           }
         ],
         "markDefs": [],
@@ -326,22 +326,6 @@
   },
   {
     "_id": "0de9e913-ef14-44c5-ae5a-51b89c12e7df",
-    "description": [
-      {
-        "_key": "da4d6840d425",
-        "_type": "block",
-        "children": [
-          {
-            "_key": "402f8406ad4a",
-            "_type": "span",
-            "marks": [],
-            "text": "Vi har opplevd litt trøbbel med innlogging. Det skal være fikset nå. Beklager problemene."
-          }
-        ],
-        "markDefs": [],
-        "style": "normal"
-      }
-    ],
     "image": {
       "alt": "I første rute er Påske Haren forskrekket over at EggsChange-serveren har krasjet. Neste rute er 30 timer tidligere, da gjestene ankom Harefjell. Påske Haren ønsker å vise alle de nye sikkerhetstiltakene han har satt i stand. I rute 3 blir vi presentert for gjestene: musen Mette Traakpad, pingvinen Ben Guvin (det er noe kjent med den fyren...), vaskebjørnen Anetti Bac, reven Mikael Foks og ulven Ulrik Lupetuss. I siste bildet forteller Påske Haren ivrig om de nye sikkerhetstiltakene, deriblant volgrav, kameraer med med. Samtidig tar Anetti og Mikael en selfie som Anetti legger ut på Instagram. Mikael ber Anetti tagge ham på @mikaelfoks1337.",
       "url": "https://cdn.sanity.io/images/ttmdhnq3/production/11bfcee186bdfe47d49b2a18ef0ac9794b58b648-1280x800.png"
@@ -351,83 +335,25 @@
       "_type": "slug",
       "current": "skjaertorsdag"
     },
-    "solutions": [
+    "title": "Skjærtorsdag"
+  },
+  {
+    "_id": "e1236e67-975e-4f47-bc67-26fd61e8dc0c",
+    "attachments": [
       {
-        "id": "0xbDd28E7BFfA2D707057cDFE8605E877FE7d59CA5",
-        "nickname": "Scalpel",
-        "timestamp": "2021-04-01T08:08:47.204Z"
-      },
-      {
-        "id": "0x0da22216cd5470cD4bDA930884d3F97872FB65cC",
-        "nickname": "halvis",
-        "timestamp": "2021-04-01T08:14:38.937Z"
-      },
-      {
-        "id": "0x1e5e0df0d7C19d001126f655E0a2fae3e655Ac6a",
-        "nickname": "unblvr",
-        "timestamp": "2021-04-01T08:15:31.971Z"
-      },
-      {
-        "id": "0xE78dA1146e8d7ad70bbeaF9fca7e74Df183E9C92",
-        "nickname": "Sithis",
-        "timestamp": "2021-04-01T08:18:29.109Z"
-      },
-      {
-        "id": "0x9Ae25a54512A6D7cDeAD70a4D9216e27bc0A5BDe",
-        "nickname": "klarz",
-        "timestamp": "2021-04-01T08:29:53.852Z"
-      },
-      {
-        "id": "0x3fEf27f9b16Ad7D752130f23a7e74FB80428673c",
-        "nickname": "kev90",
-        "timestamp": "2021-04-01T08:36:00.553Z"
-      },
-      {
-        "id": "0xE63B1a06ab69dc893d2B40344Bf293Fc2445E33F",
-        "nickname": "webhak",
-        "timestamp": "2021-04-01T08:38:40.978Z"
-      },
-      {
-        "id": "0x1d8e44D8c41536019A352C3120f04C12968C8488",
-        "nickname": "bitBug",
-        "timestamp": "2021-04-01T08:40:33.406Z"
-      },
-      {
-        "id": "0x2E3EF9b4F2900F753b0dE9488c55b528843e6A1e",
-        "nickname": "trylan",
-        "timestamp": "2021-04-01T08:43:10.144Z"
-      },
-      {
-        "id": "0xfa245DD555D201A4A61Eb77c8C15BA1239DEE896",
-        "nickname": "Morthius",
-        "timestamp": "2021-04-01T08:52:50.338Z"
-      },
-      {
-        "id": "0xCBEEC017DCFB3C0984A33AcAFD61d98A93265d9e",
-        "nickname": "iSagen",
-        "timestamp": "2021-04-01T08:53:36.970Z"
-      },
-      {
-        "id": "0xb9e3475488E653244e0720739EF3010305bb77F9",
-        "nickname": "bummie",
-        "timestamp": "2021-04-01T08:54:06.869Z"
-      },
-      {
-        "id": "0xDdF80274c92B4a78DE9Fb97196BEb5fC22c1034A",
-        "nickname": "g0li",
-        "timestamp": "2021-04-01T08:54:14.006Z"
-      },
-      {
-        "id": "0xaa2a8D240B83fc09657Bb48d0CD2888B58c95A9f",
-        "nickname": "SgtSIGSEGV",
-        "timestamp": "2021-04-01T08:58:20.795Z"
-      },
-      {
-        "id": "0x57686cE4289C2f919a04f33F85b011230c800d7d",
-        "nickname": "fjank",
-        "timestamp": "2021-04-01T08:58:55.167Z"
+        "filename": "event.log",
+        "url": "https://cdn.sanity.io/files/ttmdhnq3/production/919b2f3243fa56540c3f35c8f6dd3e42f59d5694.log"
       }
     ],
-    "title": "Skjærtorsdag"
+    "image": {
+      "alt": "Påske Haren viser stolt frem EggsChange-serverrommet. Inne på serverrommet henger det en postit-lapp fra en av PCene med påskriften '43mm3l1g437'. Senere samme dag går alarmen, og Påske Haren løper til EggsChange-serverrommet. Der ser han med skrekk og gru at EggsChange-serveren har krasjet! Påske Haren spør påskekyllingen om hen ser noe i eventloggene. Påskekyllingen sier det ser ut som de fikk en oppdatering fra Paasche Consulting rett før alt krasjet. Da smeller det fra Påske Haren at det er typisk konsulenter å fakturere når timeprisen er dyrest. (Påske Harens syn på konsulenter er ikke representativt for PST. Vi har mange konsulentvenner, vi lover!)",
+      "url": "https://cdn.sanity.io/images/ttmdhnq3/production/cca6bce7a60a209ed28d89f174148ac72ba8d476-2560x1600.png"
+    },
+    "informationOnly": false,
+    "slug": {
+      "_type": "slug",
+      "current": "langfredag"
+    },
+    "title": "Langfredag"
   }
 ]
