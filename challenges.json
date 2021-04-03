@@ -355,5 +355,24 @@
       "current": "langfredag"
     },
     "title": "Langfredag"
+  },
+  {
+    "_id": "e8f81c6a-3251-4abb-9bdb-a6e5a8d0b23b",
+    "attachments": [
+      {
+        "filename": "nettverkstrafikk.pcap",
+        "url": "https://cdn.sanity.io/files/ttmdhnq3/production/3e6a82c7b03d9d7489d02a1e3059f1b796cab175.pcap"
+      }
+    ],
+    "image": {
+      "alt": "Påske Haren spør hva status er. Påskekyllingen kan stadfeste at hen har gjenopprettet systemene og avverget katastrofen. I tillegg kan hen meddele at gårsdagens oppdatering innehold fingeravtrykk som ikke stammet fra Paasche Consulting. Det ser ut som noen har utnyttet en svakhet i EGGNET. Påske Haren blir opprørt over dette, da det er han som har laget nettverksprotokollen EGGNET. Der benyttes jo topp moderne teknologi, men åpen kildekode og det hele. Dessverre har påskekyllingen en PCAP som kan bekrefte at dette er tilfelle. I tillegg kan hen meddele at angrepet må samme fra inne i dette bygget. Påske Haren synes dette nesten ligner en episode av Inspector Morse.",
+      "url": "https://cdn.sanity.io/images/ttmdhnq3/production/2d00e164bf43a8a61bf42612c0972f233a8719e0-1280x800.png"
+    },
+    "informationOnly": false,
+    "slug": {
+      "_type": "slug",
+      "current": "paskeaften"
+    },
+    "title": "Påskeaften"
   }
 ]
