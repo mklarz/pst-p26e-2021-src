@@ -663,12 +663,163 @@
         "id": "0xbdE73ed1eFC5Cac0986dcBca84Ee6F0CdfE219fa",
         "nickname": "P0LaRo1d",
         "timestamp": "2021-04-03T00:48:18.710Z"
+      },
+      {
+        "id": "0x970c4157c9B32601ff6A15742c69f0748cea89C8",
+        "nickname": "AsapZulu",
+        "timestamp": "2021-04-03T08:30:27.784Z"
+      },
+      {
+        "id": "0x0da22216cd5470cD4bDA930884d3F97872FB65cC",
+        "nickname": "halvis",
+        "timestamp": "2021-04-03T08:36:03.004Z"
+      },
+      {
+        "id": "0xfa245DD555D201A4A61Eb77c8C15BA1239DEE896",
+        "nickname": "Morthius",
+        "timestamp": "2021-04-03T18:19:36.102Z"
+      },
+      {
+        "id": "0x0A62A038Ce84117c372db4FDAA4C1B2579C22D93",
+        "nickname": "henrikhorluck",
+        "timestamp": "2021-04-04T00:00:50.889Z"
       }
     ]
   },
   {
     "_id": "e8f81c6a-3251-4abb-9bdb-a6e5a8d0b23b",
     "title": "Påskeaften",
+    "solutions": [
+      {
+        "id": "0x1e5e0df0d7C19d001126f655E0a2fae3e655Ac6a",
+        "nickname": "unblvr",
+        "timestamp": "2021-04-03T08:48:40.553Z"
+      },
+      {
+        "id": "0x9Ae25a54512A6D7cDeAD70a4D9216e27bc0A5BDe",
+        "nickname": "klarz",
+        "timestamp": "2021-04-03T08:53:19.107Z"
+      },
+      {
+        "id": "0xD27E938B7b2dC4B1305a01499E7cB2ebb181646f",
+        "nickname": "zup",
+        "timestamp": "2021-04-03T10:22:49.953Z"
+      },
+      {
+        "id": "0x019909f5CB635832aF56bEC07dfA0093f04F25b7",
+        "nickname": "enfo",
+        "timestamp": "2021-04-03T12:42:28.194Z"
+      },
+      {
+        "id": "0x561b4784Ed17815E646FaCB393e14938b6951245",
+        "nickname": "Initz",
+        "timestamp": "2021-04-03T12:43:44.301Z"
+      },
+      {
+        "id": "0xdf59EC04bD4aa9090a3f6d3d6F1425e6763e4560",
+        "nickname": "Pwntheon",
+        "timestamp": "2021-04-03T12:44:09.706Z"
+      },
+      {
+        "id": "0xcFc314c18e2Bad1dE0Bd818754f599A912d70810",
+        "nickname": "panda",
+        "timestamp": "2021-04-03T12:44:40.943Z"
+      },
+      {
+        "id": "0x55802350c8D25EE1F2365097B3Cd01977982B758",
+        "nickname": "ruant",
+        "timestamp": "2021-04-03T13:04:27.674Z"
+      },
+      {
+        "id": "0xb9e3475488E653244e0720739EF3010305bb77F9",
+        "nickname": "bummie",
+        "timestamp": "2021-04-03T13:08:35.695Z"
+      },
+      {
+        "id": "0xaa2a8D240B83fc09657Bb48d0CD2888B58c95A9f",
+        "nickname": "SgtSIGSEGV",
+        "timestamp": "2021-04-03T13:08:52.674Z"
+      },
+      {
+        "id": "0xE78dA1146e8d7ad70bbeaF9fca7e74Df183E9C92",
+        "nickname": "Sithis",
+        "timestamp": "2021-04-03T13:09:16.575Z"
+      },
+      {
+        "id": "0xBe8eED2c072443155dBeeB9d6b7269a6a772809a",
+        "nickname": "Scalpel",
+        "timestamp": "2021-04-03T13:09:34.112Z"
+      },
+      {
+        "id": "0x57686cE4289C2f919a04f33F85b011230c800d7d",
+        "nickname": "fjank",
+        "timestamp": "2021-04-03T13:11:46.400Z"
+      },
+      {
+        "id": "0x0b7C26C29Cd1C8694Ddd69fC5843A21E63E682b5",
+        "nickname": "shirajuki",
+        "timestamp": "2021-04-03T13:13:52.692Z"
+      },
+      {
+        "id": "0xb03e0f839b3C081E45316a0F2b88B8E56aA8125c",
+        "nickname": "clorin",
+        "timestamp": "2021-04-03T13:24:30.344Z"
+      },
+      {
+        "id": "0x79fC25A2D480a483fB2004DA639896A5142288A2",
+        "nickname": "ArtigGud",
+        "timestamp": "2021-04-03T13:38:39.182Z"
+      },
+      {
+        "id": "0x0A2F60070767E880728fb64149803594a75250f7",
+        "nickname": "mats",
+        "timestamp": "2021-04-03T14:10:00.333Z"
+      },
+      {
+        "id": "0x1d8e44D8c41536019A352C3120f04C12968C8488",
+        "nickname": "bitBug",
+        "timestamp": "2021-04-03T14:10:44.772Z"
+      },
+      {
+        "id": "0x85617726beA996B192654eBD4a5c0d698EF4f7D6",
+        "nickname": "niikoo",
+        "timestamp": "2021-04-03T14:17:19.234Z"
+      },
+      {
+        "id": "0x086F5890aAE739050857be659e5526896978389A",
+        "nickname": "aaaaa",
+        "timestamp": "2021-04-03T14:33:26.395Z"
+      },
+      {
+        "id": "0x4801d928ea1300087FE4bcFD58a4e7c1022e8fde",
+        "nickname": "Murillio4",
+        "timestamp": "2021-04-03T15:49:21.684Z"
+      },
+      {
+        "id": "0x63c94BAFBEFEA24EfcC6E531025D70067d5c9Cf2",
+        "nickname": "langemyh",
+        "timestamp": "2021-04-03T19:15:44.493Z"
+      },
+      {
+        "id": "0x32BdcAbB0eA0F5795E05511C4F98AD34054177Fe",
+        "nickname": "terjegun",
+        "timestamp": "2021-04-03T20:16:15.250Z"
+      },
+      {
+        "id": "0x3dB6783F820EDf5E47cc4a9272e03639734d6e65",
+        "nickname": "Nordnorsken",
+        "timestamp": "2021-04-03T21:34:39.650Z"
+      },
+      {
+        "id": "0xFAe65d8E526Be1dCB45A5698CF5E59097980d7Eb",
+        "nickname": "Rebbaaaa",
+        "timestamp": "2021-04-04T07:59:58.680Z"
+      }
+    ]
+  },
+  {
+    "_id": "19fb1e52-a764-4743-a1ed-b35570b6d1aa",
+    "title": "1. Påskedag",
     "solutions": null
   }
 ]
