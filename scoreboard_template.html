@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>p26e Scoreboard</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@600&display=swap"
+         rel="stylesheet"
+         />
+      <link rel="stylesheet" href="./sites/p26e.dev/files/global.css" />
+      <link rel="stylesheet" href="./sites/p26e.dev/files/build/bundle.css" />
+      <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      tr {
+        border-bottom: 1px solid #290440;
+      }
+      th {
+        font-weight: bold;
+        text-align: left;
+        padding: 5px;
+        font-size: 0.8rem;
+      }
+      td {
+        font-size: 0.9rem;
+        padding: 2px;
+      }
+      .ticket-count {
+          font-family: "Bangers", cursive;
+          color: #dbbf23;
+          text-align: center;
+          font-size: 1.5rem;
+          text-shadow: 2px 0 0 black, -1px 0 black, 0 2px black, 0 -1px black;
+          letter-spacing: 1px;
+      }
+      </style>
+   </head>
+   <body>
+      <h1 class="svelte-15bslxt">Mysteriet på <br> Harefjell Vinterresort</h1>
+      <section class="svelte-zkls1e">
+         <svg viewBox="0 0 1396 254" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 181.243L46.6667 133.233C93.3333 84.3214 186.667 -10.3465 280 0.923444C373.333 12.1934 466.667 133.909 560 193.189C653.333 253.371 746.667 253.371 840 217.307C933.333 181.243 1026.67 109.115 1120 109.115C1213.33 109.115 1306.67 181.243 1353.33 217.307L1400 253.371H1137.95C1091.28 253.371 997.95 253.371 904.617 253.371C811.284 253.371 761.333 253.371 668 253.371C574.667 253.371 456.833 253.371 363.5 253.371C270.167 253.371 317.833 253.371 224.5 253.371C131.167 253.371 93.3333 253.371 46.6667 253.371H0V181.243Z" fill="#7d115d"></path>
+         </svg>
+         <div class="svelte-zkls1e">
+            <article class="svelte-zkls1e">
+               <h2 class="svelte-15bslxt">Scoreboard</h2>
+               <h3 class="ticket-count">Antall lodd: {{TICKET_COUNT}}</h3>
+               <div>
+                   <table class="scoreboard">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Navn</th>
+                          <th>Skjærtorsdag</th>
+                          <th>Langfredag</th>
+                          <th>Påskeaften</th>
+                          <th>1. Påskedag</th>
+                          <th>Vinnersannsynlighet</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {{SCOREBOARD_BODY}}
+                      </tbody>
+                    </table> 
+               </div>
+               <ul class="svelte-15bslxt"></ul>
+            </article>
+         </div>
+         <svg viewBox="0 0 1398 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 211L46.6667 184.3C93.3333 158 186.667 104 280 88.3C373.333 72 466.667 94 560 77.7C653.333 62 746.667 8 840 29.7C933.333 51 1026.67 147 1120 173.7C1213.33 200 1306.67 158 1353.33 136.3L1400 115V0H1353.33C1306.67 0 1213.33 0 1120 0C1026.67 0 933.333 0 840 0C746.667 0 653.333 0 560 0C466.667 0 373.333 0 280 0C186.667 0 93.3333 0 46.6667 0H0V211Z" fill="#7d115d"></path>
+         </svg>
+      </section>
+   </body>
+</html>
