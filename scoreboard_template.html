@@ -37,6 +37,13 @@
           text-shadow: 2px 0 0 black, -1px 0 black, 0 2px black, 0 -1px black;
           letter-spacing: 1px;
       }
+      .challenge-score {
+        font-size: 0.6rem;
+        float: right;
+      }
+      .challenge-container {
+        width: 50%;
+      }
       </style>
    </head>
    <body>
@@ -52,15 +59,7 @@
                <div>
                    <table class="scoreboard">
                       <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>Navn</th>
-                          <th>Skjærtorsdag</th>
-                          <th>Langfredag</th>
-                          <th>Påskeaften</th>
-                          <th>1. Påskedag</th>
-                          <th>Vinnersannsynlighet</th>
-                        </tr>
+                        {{SCOREBOARD_HEADER}}
                       </thead>
                       <tbody>
                         {{SCOREBOARD_BODY}}
