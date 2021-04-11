@@ -387,5 +387,68 @@
       "current": "1-paskedag"
     },
     "title": "1. Påskedag"
+  },
+  {
+    "_id": "118d6821-3b2d-4fe7-aca2-6b8d55b6c6a8",
+    "description": [
+      {
+        "_key": "de60c414835b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "404390d00d00",
+            "_type": "span",
+            "marks": [],
+            "text": "Tusen takk for deltagelsen! Vi hadde satt stor pris på om du hadde tatt deg tid til å gi oss litt tilbakemeldinger ved å svare på "
+          },
+          {
+            "_key": "348b8fb5763a",
+            "_type": "span",
+            "marks": [
+              "da750514474e"
+            ],
+            "text": "denne undersøkelsen"
+          },
+          {
+            "_key": "d2cb3ecc1db8",
+            "_type": "span",
+            "marks": [],
+            "text": " (tror det skal være mulige å unnagjøre det på ca 30 sekunder, avhening av hvor raske tastefingrene dine er)."
+          }
+        ],
+        "markDefs": [
+          {
+            "_key": "da750514474e",
+            "_type": "link",
+            "href": "https://5vsxmr4nxgy.typeform.com/to/Q3NlJXuy"
+          }
+        ],
+        "style": "normal"
+      },
+      {
+        "_key": "042568b45343",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "fd77bd2da3d7",
+            "_type": "span",
+            "marks": [],
+            "text": "Håper alle har hatt en fin påske, sees plutselig igjen."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      }
+    ],
+    "image": {
+      "alt": "Gratulerer til vinnerene: zup, ArtigGud og Pwntheon. Preme er på vei i posten.",
+      "url": "https://cdn.sanity.io/images/ttmdhnq3/production/fbb20937b4d5a9d945a956b08709739db9292253-1280x800.png"
+    },
+    "informationOnly": true,
+    "slug": {
+      "_type": "slug",
+      "current": "vinnere"
+    },
+    "title": "Vinnere"
   }
 ]
